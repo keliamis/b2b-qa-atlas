@@ -1,0 +1,29 @@
+/* Shared accessibility and compact authentication layout. */
+:root { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+button, input, select, textarea { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--accent, #7c9dff); outline-offset: 3px; }
+button:disabled { cursor: not-allowed; }
+.login-page { padding: 32px 20px; background: var(--bg); min-height: 100dvh; }
+.login-card { width: 100%; max-width: 448px; padding: 32px; border-radius: 16px; box-sizing: border-box; }
+.login-card .brand { margin-bottom: 28px; }
+.login-card h1 { font-size: clamp(25px, 5vw, 32px); line-height: 1.2; }
+.login-card > p { line-height: 1.6; }
+.auth-fields { padding: 0; margin: 0; border: 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.auth-fields input { width: 100%; min-width: 0; box-sizing: border-box; min-height: 44px; }
+.auth-fields > .button { width: 100%; min-height: 46px; justify-content: center; }
+.auth-reveal { display: flex; align-items: center; gap: 8px; align-self: flex-start; border: 0; background: transparent; color: var(--text); padding: 8px 0; min-height: 44px; cursor: pointer; }
+.login-card > .text-button { display: block; max-width: 100%; white-space: normal; line-height: 1.5; text-align: left; }
+.login-card .notice { align-items: flex-start; }
+.login-card .notice svg { flex-shrink: 0; margin-top: 3px; }
+.login-card .error-banner { overflow-wrap: anywhere; }
+.auto-workspace, .auto-metrics > *, .auto-upload { min-width: 0; }
+.auto-test-list label span { overflow-wrap: anywhere; min-width: 0; }
+.auto-actions select { min-width: 0; }
+@media (max-width: 400px) { .login-page { padding: 16px 12px; } .login-card { padding: 24px 18px; } .auto-panel { padding: 12px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+.auth-recovery-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.auth-recovery { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border, #8885); }
+.auth-recovery h2 { font-size: 20px; }
+.auth-recovery p { line-height: 1.6; overflow-wrap: anywhere; }

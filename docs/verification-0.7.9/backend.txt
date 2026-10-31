@@ -1,0 +1,35 @@
+✔ login rejects malformed bodies without unhandled TypeError (2.339603ms)
+✔ register rejects invalid shapes before database calls (0.985823ms)
+✔ password hashing requires 12 to 128 chars (122.862503ms)
+✔ autorun HTTP: session, queue, snapshot, viewer, reports, cancellation (608.670153ms)
+✔ all authentication rate-limit upserts qualify the existing count column (2.168259ms)
+✔ failed and successful sign-in update attempt counters without SQL errors (485.689011ms)
+✔ registration increments rate limit counters on repeated valid requests (188.163111ms)
+✔ upgrades legacy PostgreSQL auth expiry columns without dropping data (3.587465ms)
+✔ already upgraded PostgreSQL auth tables remain unchanged (0.32894ms)
+✔ rolls back partial upgrades if PostgreSQL fails (2.046662ms)
+▶ workspace security and team workflow against native SQLite
+  ✔ anonymous and cross-origin writes are rejected (18.282581ms)
+  ✔ owner creates project; other accounts see no data (31.489512ms)
+  ✔ invitation is email-bound and stores only hashed secret (46.155311ms)
+  ✔ viewer cannot alter project, invite, comment or create runs (9.127763ms)
+  ✔ owner may promote teammate but cannot demote own ownership (2.830158ms)
+  ✔ editing requirements invalidates approval and assigns trusted audit actor (4.922717ms)
+  ✔ stale updates and invalid links are rejected (6.065131ms)
+  ✔ assignment must refer to a project member (5.348021ms)
+  ✔ comments stay within project and require a real case (6.732075ms)
+  ✔ manual run keeps immutable test snapshot and guarded result revision (35.779908ms)
+  ✔ saved views are private to their account and project (10.398578ms)
+  ✔ defects preserve trusted run evidence, deduplicate and protect updates (22.483868ms)
+  ✔ revoked and expired invitations cannot be used (15.277643ms)
+  ✔ removed teammate cannot read, write or reuse accepted invitation (4.496749ms)
+  ✔ owner deletes project and associated data, another project survives (12.454514ms)
+✔ workspace security and team workflow against native SQLite (245.904516ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1504.301369

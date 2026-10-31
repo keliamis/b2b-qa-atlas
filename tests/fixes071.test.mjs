@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {generateData,dataCSV,coverageAdvice,duplicates} from '../backend/src/insights.mjs';
+const spec={assumptions:[],fields:[{name:'amount',type:'number',minimum:0,maximum:10000,thresholds:[1000,5000],precision:2,required:true,format:'text',min_length:null,max_length:null}]};
+test('positive sets have exact size and distinct values across classes',()=>{for(const n of [1,3,5,10]){const d=generateData(spec,'positive',n);assert.equal(d.rows.length,n);assert.equal(new Set(d.rows.map(r=>r.data.amount)).size,n);assert.equal(dataCSV(d).split('\r\n').length,n+1);}const values=generateData(spec,'positive',3).rows.map(r=>r.data.amount);assert.ok(values[0]<1000&&values[1]>=1000&&values[1]<5000&&values[2]>=5000);});
+test('all modes enforce exact count or explicit shortage',()=>{for(const mode of ['positive','negative','boundary','mixed'])for(const n of [1,3,5,10]){try{assert.equal(generateData(spec,mode,n).rows.length,n);}catch(e){assert.equal(e.status,422);}}for(const n of [0,-1,101,NaN])assert.throws(()=>generateData(spec,'positive',n));});
+test('advisor never copies document to Then and groups boundaries',()=>{const p={requirements:[{id:'r',key:'REQ-1',title:'Shop',text:'# Rules\nInput amount thresholds: 0 1000 5000',priority:'high'}],cases:[],sources:[]};const a=coverageAdvice(p,null);assert.equal(a.recommendations.filter(r=>r.kind==='boundary').length,1);assert.ok(a.recommendations.every(r=>!r.scenario?.includes('# Rules')));assert.match(a.recommendations[0].title,/Связь/);});
+test('distinct boundary inputs are not duplicates',()=>{assert.equal(duplicates([{id:'a',title:'a',gherkin:'Given 4999.99\nWhen calculate\nThen 4749.99'},{id:'b',title:'b',gherkin:'Given 5000.00\nWhen calculate\nThen 4500.00'}]).length,0);});
+
+test("bare list numbers are not input boundaries",()=>{const p={requirements:[{id:"r",key:"REQ-1",title:"Shop",text:"# Rules\n0 1000 5000",priority:"high"}],cases:[],sources:[]};assert.equal(coverageAdvice(p,null).recommendations.filter(r=>r.kind==="boundary").length,0);});

@@ -1,0 +1,38 @@
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (143.500851ms)
+✔ advisor finds exactly 5000, ignores expected-only mentions and closes after input test (7.687271ms)
+✔ deduplicator detects same steps and near matches but preserves different boundaries (2.519929ms)
+✔ deterministic data, bounds, modes and safe CSV/JSON (7.392239ms)
+✔ secrets are removed before LLM submission (0.63867ms)
+✔ HTTP feature lifecycle: auth, failed analysis, missing traceback, provider failure, reports, data and decisions (510.447768ms)
+file://<project>/tests/semantic-embeddings.test.mjs:37
+ const db={dialect:'postgres',raw:{prepare(sql){return {get(){return sql.includes('FROM projects')?{data:JSON.stringify(project)}:meta;},all(...args){querySQL={sql,args};return [{requirement_id:'r1',similarity:.91}];}};}};
+                                                                                                                                                                                                                             ^
+
+SyntaxError: Unexpected token ';'
+    at compileSourceTextModule (node:internal/modules/esm/utils:319:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:89:18)
+    at #translate (node:internal/modules/esm/loader:438:20)
+    at afterLoad (node:internal/modules/esm/loader:506:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:511:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:564:36)
+    at afterResolve (node:internal/modules/esm/loader:611:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:617:12)
+    at node:internal/modules/esm/loader:636:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:370:14)
+
+Node.js v24.22.1
+✖ tests/semantic-embeddings.test.mjs (145.629044ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1252.71948
+
+✖ failing tests:
+
+test at tests/semantic-embeddings.test.mjs:1:1
+✖ tests/semantic-embeddings.test.mjs (145.629044ms)
+  'test failed'

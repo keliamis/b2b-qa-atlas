@@ -1,0 +1,3 @@
+Production build: PASS in the preceding work session.
+Vite: 1952 modules transformed; built in 1.36s.
+The temporary raw build log did not survive the session; this is a summary of the observed output, not a fresh execution.

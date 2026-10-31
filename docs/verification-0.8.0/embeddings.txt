@@ -1,0 +1,15 @@
+✔ chunks preserve all text and respect UTF-8 budget (7.209683ms)
+✔ OpenAI uses embedding model, sorts index and validates dimensions (8.519207ms)
+✔ Yandex uses native API and paired models in one vector space (1.124374ms)
+✔ no fallback to hashes on missing config or provider failure (1.598389ms)
+✔ index preparation uses full text and never writes partial provider output (63.35524ms)
+✔ dimension drift across provider batches rejects index (5.213268ms)
+✔ stale requirements/model disable search; query goes through same model and pgvector (8.579207ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 276.237917

@@ -1,0 +1,101 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> qa-atlas-selfhost@0.8.2 test
+> node --test tests/*.test.mjs
+
+✔ offline administration imports a copy, backs it up and restores it (619.380547ms)
+✔ concurrent registration returns conflict, not SQLite failure (142.661583ms)
+✔ recovery uses expiring single-use hashed tokens, revokes sessions and resists replay (332.379725ms)
+Account email delivery failed
+✔ mailer failure exposes no secret and removes undelivered token (63.282257ms)
+✔ login rejects malformed bodies without unhandled TypeError (1.352736ms)
+✔ register rejects invalid shapes before database calls (0.420483ms)
+✔ password hashing requires 12 to 128 chars (88.425826ms)
+✔ autorun HTTP: session, queue, snapshot, viewer, reports, cancellation (548.08079ms)
+✔ UI queues selected test, shows immutable coverage and disables viewer writes (110.259737ms)
+✔ large document sends full selected requirement including REQ-051, not first 100 entries (5.501333ms)
+✔ unknown/ambiguous selection is rejected rather than silently truncated (0.69767ms)
+✔ bulk delete, project deletion and empty workspace are available in local mode (383.773745ms)
+✔ positive sets have exact size and distinct values across classes (4.800106ms)
+✔ all modes enforce exact count or explicit shortage (5.290725ms)
+✔ advisor never copies document to Then and groups boundaries (2.033581ms)
+✔ distinct boundary inputs are not duplicates (1.085995ms)
+✔ bare list numbers are not input boundaries (0.483048ms)
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (84.857806ms)
+✔ test data UI sends the selected requirement and clears prior results on selection change (57.603533ms)
+✔ advisor finds exactly 5000, ignores expected-only mentions and closes after input test (4.479191ms)
+✔ deduplicator detects same steps and near matches but preserves different boundaries (2.016825ms)
+✔ deterministic data, bounds, modes and safe CSV/JSON (7.384694ms)
+✔ secrets are removed before LLM submission (0.789738ms)
+✔ HTTP feature lifecycle: auth, failed analysis, missing traceback, provider failure, reports, data and decisions (431.121212ms)
+✔ all authentication rate-limit upserts qualify the existing count column (1.726059ms)
+✔ failed and successful sign-in update attempt counters without SQL errors (250.04723ms)
+✔ registration increments rate limit counters on repeated valid requests (99.300792ms)
+✔ registration validates passwords and locks mode during submit (69.493493ms)
+✔ upgrades legacy PostgreSQL auth expiry columns without dropping data (1.492046ms)
+✔ already upgraded PostgreSQL auth tables remain unchanged (0.150467ms)
+✔ rolls back partial upgrades if PostgreSQL fails (0.446011ms)
+✔ filters combine suite, label search, ownership and favorites without mutating cases (2.191639ms)
+✔ attention uses local due date, pending review and requirement links (0.399511ms)
+✔ comparison separates regressions, recoveries, scope and changed tests (1.730144ms)
+✔ coverage is not compared across source changes/frameworks; metadata does not invalidate source (0.27905ms)
+✔ missing evidence, collection errors and skips never count as pass/fix (0.202895ms)
+✔ flaky candidates require repeat oscillation on identical snapshots (6.414483ms)
+✔ test edits, changing parameter sets and skipped execution are not flaky evidence (0.296847ms)
+✔ stale ignores source identifiers and ordering, detects changed executable code (0.229656ms)
+✔ Markdown export preserves snapshot identity and escapes table content (0.40533ms)
+✔ comparison selection and flaky evidence navigate to saved runs (68.22586ms)
+▶ self-hosted HTTP, sessions, job pipeline and persistence
+  ✔ unauthenticated and forged identity cannot access workspace (29.377493ms)
+  ✔ public registration creates persistent account and valid session (104.711701ms)
+  ✔ login sets HttpOnly session; secrets are hashed; CSRF rejected (121.184012ms)
+  ✔ project persistence and ownership are preserved through the HTTP adapter (9.977546ms)
+  ✔ generation saves drafts into the same project and permits export (36.808526ms)
+  ✔ changes during processing reject stale generation instead of overwriting work (24.361559ms)
+  ✔ document upload uses private processor and commits real extracted text (31.724245ms)
+  ✔ archive preserves data, rejects writes and can be restored (10.115534ms)
+  ✔ SQLite backup can be reopened with projects, accounts and migrations intact (2.657339ms)
+  ✔ logout revokes session; login attempt limits apply (450.999144ms)
+✔ self-hosted HTTP, sessions, job pipeline and persistence (965.344394ms)
+✔ chunks preserve all text and respect UTF-8 budget (7.77412ms)
+✔ OpenAI uses embedding model, sorts index and validates dimensions (8.863769ms)
+✔ Yandex uses native API and paired models in one vector space (0.93669ms)
+✔ no fallback to hashes on missing config or provider failure (5.751165ms)
+✔ index preparation uses full text and never writes partial provider output (31.114107ms)
+✔ dimension drift across provider batches rejects index (7.971466ms)
+✔ stale requirements/model disable search; query goes through same model and pgvector (2.348544ms)
+✖ 51-page PDF: HTTP async import, links, export and restart persistence (30006.875188ms)
+✔ tester can create a requirement, edit an approved case, and cannot fake AI or runs (635.052543ms)
+✔ hosted account loads cloud projects, creates an invitation and records a manual result (224.186722ms)
+✔ anonymous hosted visitor can sign in or open an explicitly local demo (98.739418ms)
+▶ workspace security and team workflow against native SQLite
+  ✔ anonymous and cross-origin writes are rejected (7.252464ms)
+  ✔ owner creates project; other accounts see no data (17.152485ms)
+  ✔ invitation is email-bound and stores only hashed secret (13.535891ms)
+  ✔ viewer cannot alter project, invite, comment or create runs (2.656928ms)
+  ✔ owner may promote teammate but cannot demote own ownership (2.085979ms)
+  ✔ editing requirements invalidates approval and assigns trusted audit actor (1.404124ms)
+  ✔ stale updates and invalid links are rejected (2.42525ms)
+  ✔ assignment must refer to a project member (1.657254ms)
+  ✔ comments stay within project and require a real case (3.021211ms)
+  ✔ manual run keeps immutable test snapshot and guarded result revision (5.413588ms)
+  ✔ saved views are private to their account and project (2.575096ms)
+  ✔ defects preserve trusted run evidence, deduplicate and protect updates (11.541951ms)
+  ✔ revoked and expired invitations cannot be used (18.376987ms)
+  ✔ removed teammate cannot read, write or reuse accepted invitation (3.174858ms)
+  ✔ owner deletes project and associated data, another project survives (4.247032ms)
+✔ workspace security and team workflow against native SQLite (101.607834ms)
+ℹ tests 79
+ℹ suites 0
+ℹ pass 78
+ℹ fail 0
+ℹ cancelled 1
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 31590.016955
+
+✖ failing tests:
+
+test at tests/submission-pdf-http.test.mjs:14:1
+✖ 51-page PDF: HTTP async import, links, export and restart persistence (30006.875188ms)
+  'test timed out after 30000ms'

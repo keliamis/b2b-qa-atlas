@@ -1,0 +1,18 @@
+✔ positive sets have exact size and distinct values across classes (14.995509ms)
+✔ all modes enforce exact count or explicit shortage (7.835422ms)
+✔ advisor never copies document to Then and groups boundaries (3.084681ms)
+✔ distinct boundary inputs are not duplicates (2.039132ms)
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (107.248168ms)
+✔ advisor finds exactly 5000, ignores expected-only mentions and closes after input test (6.143548ms)
+✔ deduplicator detects same steps and near matches but preserves different boundaries (1.866997ms)
+✔ deterministic data, bounds, modes and safe CSV/JSON (7.557047ms)
+✔ secrets are removed before LLM submission (0.655095ms)
+✔ HTTP feature lifecycle: auth, failed analysis, missing traceback, provider failure, reports, data and decisions (530.047605ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1058.905186

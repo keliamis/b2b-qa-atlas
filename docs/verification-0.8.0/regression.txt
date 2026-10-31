@@ -1,0 +1,12 @@
+✔ upgrades legacy PostgreSQL auth expiry columns without dropping data (2.686148ms)
+✔ already upgraded PostgreSQL auth tables remain unchanged (0.300566ms)
+✔ rolls back partial upgrades if PostgreSQL fails (0.536587ms)
+✔ 51-page PDF: HTTP async import, links, export and restart persistence (2119.095795ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2641.235183

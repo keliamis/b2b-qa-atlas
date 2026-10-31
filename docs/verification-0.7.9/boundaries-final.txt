@@ -1,0 +1,13 @@
+✔ positive sets have exact size and distinct values across classes (23.838478ms)
+✔ all modes enforce exact count or explicit shortage (5.697817ms)
+✔ advisor never copies document to Then and groups boundaries (2.337371ms)
+✔ distinct boundary inputs are not duplicates (1.778737ms)
+✔ bare list numbers are not input boundaries (0.498947ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1141.471596

@@ -1,0 +1,17 @@
+node_modules/
+frontend/dist/
+backend/dist/
+.env
+.env.*
+!.env.example
+data/
+backups/
+*.sqlite*
+*.tsbuildinfo
+.venv/
+__pycache__/
+.pytest_cache/
+.ui-test-app.mjs
+.workspace-test.mjs
+.auto-ui-test.mjs
+.ui-test-app.css

@@ -1,0 +1,37 @@
+✔ UI queues selected test, shows immutable coverage and disables viewer writes (175.831517ms)
+✔ positive sets have exact size and distinct values across classes (7.018302ms)
+✔ all modes enforce exact count or explicit shortage (3.906795ms)
+✖ advisor never copies document to Then and groups boundaries (3.360001ms)
+✔ distinct boundary inputs are not duplicates (2.100029ms)
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (156.642926ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1161.424085
+
+✖ failing tests:
+
+test at tests/fixes071.test.mjs:7:1
+✖ advisor never copies document to Then and groups boundaries (3.360001ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (file://<project>/tests/fixes071.test.mjs:7:234)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

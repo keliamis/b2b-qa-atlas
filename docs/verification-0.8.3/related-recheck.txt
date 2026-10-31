@@ -1,0 +1,14 @@
+✔ bulk delete, project deletion and empty workspace are available in local mode (253.657709ms)
+✔ filters combine suite, label search, ownership and favorites without mutating cases (1.439588ms)
+✔ attention uses local due date, pending review and requirement links (0.25861ms)
+✔ tester can create a requirement, edit an approved case, and cannot fake AI or runs (482.67754ms)
+✔ hosted account loads cloud projects, creates an invitation and records a manual result (152.831716ms)
+✔ anonymous hosted visitor can sign in or open an explicitly local demo (40.098549ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1222.983469

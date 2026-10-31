@@ -1,0 +1,16 @@
+node_modules
+.git
+.env
+.env.*
+**/dist
+**/__pycache__
+**/.pytest_cache
+.venv
+data
+backups
+*.zip
+*.sqlite*
+.ui-test-app.mjs
+.workspace-test.mjs
+.auto-ui-test.mjs
+.ui-test-app.css

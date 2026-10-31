@@ -1,0 +1,73 @@
+{
+  "id": "autorun-demo",
+  "name": "Демо автопрогонов · Python + JavaScript",
+  "description": "Один тест: частичное покрытие. Два теста: полное.",
+  "revision": 0,
+  "requirements": [
+    {
+      "id": "demo-r",
+      "key": "REQ-001",
+      "title": "Классификация",
+      "text": "Функция classify возвращает positive для чисел больше нуля и other для нуля и отрицательных чисел.\n",
+      "priority": "medium",
+      "source": "requirements.md"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-py",
+      "name": "target.py",
+      "text": "def classify(n):\n    if n > 0:\n        return \"positive\"\n    return \"other\"\n"
+    },
+    {
+      "id": "src-js",
+      "name": "target.js",
+      "text": "exports.classify = n => {\n  if (n > 0) {\n    return \"positive\";\n  }\n  return \"other\";\n};\n"
+    }
+  ],
+  "cases": [
+    {
+      "id": "demo-0",
+      "key": "TC-001",
+      "title": "Положительное число",
+      "requirementIds": [
+        "demo-r"
+      ],
+      "type": "positive",
+      "priority": "medium",
+      "status": "approved",
+      "gherkin": "Feature: Классификация чисел\n  Scenario: Положительное число\n    Given число 1\n    When вызывается classify\n    Then результат positive\n",
+      "code": "from target import classify\n\ndef test_case_0():\n    assert classify(1) == \"positive\"\n",
+      "artifacts": {
+        "pytest": "from target import classify\n\ndef test_case_0():\n    assert classify(1) == \"positive\"\n",
+        "playwright": "const {test,expect} = require('@playwright/test');\nconst {classify} = require('../src/target.js');\ntest('case 0', () => { expect(classify(1)).toBe('positive'); });\n"
+      },
+      "framework": "pytest",
+      "assumptions": [],
+      "origin": "example",
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "demo-1",
+      "key": "TC-002",
+      "title": "Ноль",
+      "requirementIds": [
+        "demo-r"
+      ],
+      "type": "boundary",
+      "priority": "medium",
+      "status": "approved",
+      "gherkin": "Feature: Классификация чисел\n  Scenario: Ноль\n    Given число 0\n    When вызывается classify\n    Then результат other\n",
+      "code": "from target import classify\n\ndef test_case_1():\n    assert classify(0) == \"other\"\n",
+      "artifacts": {
+        "pytest": "from target import classify\n\ndef test_case_1():\n    assert classify(0) == \"other\"\n",
+        "playwright": "const {test,expect} = require('@playwright/test');\nconst {classify} = require('../src/target.js');\ntest('case 1', () => { expect(classify(0)).toBe('other'); });\n"
+      },
+      "framework": "pytest",
+      "assumptions": [],
+      "origin": "example",
+      "updatedAt": "2026-10-27T00:00:00Z"
+    }
+  ],
+  "audit": []
+}

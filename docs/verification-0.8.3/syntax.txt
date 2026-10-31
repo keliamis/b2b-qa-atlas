@@ -1,0 +1,6 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> qa-atlas-selfhost@0.8.3 check:syntax
+> node scripts/check-syntax.mjs
+
+Syntax checked: 41 JavaScript modules

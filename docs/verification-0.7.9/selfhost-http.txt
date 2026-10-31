@@ -1,0 +1,20 @@
+▶ self-hosted HTTP, sessions, job pipeline and persistence
+  ✔ unauthenticated and forged identity cannot access workspace (21762.713431ms)
+  ✔ public registration creates persistent account and valid session (709.738614ms)
+  ✔ login sets HttpOnly session; secrets are hashed; CSRF rejected (771.203109ms)
+  ✔ project persistence and ownership are preserved through the HTTP adapter (26.189136ms)
+  ✔ generation saves drafts into the same project and permits export (146.087903ms)
+  ✔ changes during processing reject stale generation instead of overwriting work (40.151644ms)
+  ✔ document upload uses private processor and commits real extracted text (47.73754ms)
+  ✔ archive preserves data, rejects writes and can be restored (19.815002ms)
+  ✔ SQLite backup can be reopened with projects, accounts and migrations intact (5.072261ms)
+  ✔ logout revokes session; login attempt limits apply (1609.051181ms)
+✔ self-hosted HTTP, sessions, job pipeline and persistence (26013.539984ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26910.551028

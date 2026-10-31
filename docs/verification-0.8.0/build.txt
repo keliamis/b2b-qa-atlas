@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> qa-atlas-selfhost@0.8.0 build
+> node scripts/build.mjs
+
+vite v8.0.13 building client environment for production...
+[2Ktransforming...✓ 1949 modules transformed.
+rendering chunks...
+computing gzip size...
+frontend/dist/index.html                   0.71 kB │ gzip:   0.45 kB
+frontend/dist/assets/index-ehYWA3wC.css  103.38 kB │ gzip:  19.13 kB
+frontend/dist/assets/index-Dfo8eFpx.js   488.17 kB │ gzip: 142.24 kB
+
+✓ built in 1.85s

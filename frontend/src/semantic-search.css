@@ -1,0 +1,7 @@
+/* Semantic search: avoid cramped labels and adjacent controls. */
+.auto-panel .semantic-index-button{display:inline-flex;max-width:100%;margin:12px 0 16px;white-space:normal;text-align:center}
+.auto-panel .semantic-search-form{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-top:12px}
+.auto-panel .semantic-search-label{display:flex;flex:1 1 270px;min-width:0;flex-direction:column;gap:8px;margin:0}
+.auto-panel .semantic-search-label input{width:100%;min-width:0;box-sizing:border-box}
+.auto-panel .semantic-search-form>.button{flex:0 0 auto;margin:0;min-height:42px}
+@media(max-width:520px){.auto-panel .semantic-search-form{flex-direction:column;align-items:stretch}.auto-panel .semantic-search-label{flex:0 1 auto;width:100%}.auto-panel .semantic-search-form>.button{width:100%;justify-content:center}}

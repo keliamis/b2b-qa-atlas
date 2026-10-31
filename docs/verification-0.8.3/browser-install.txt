@@ -1,0 +1,41 @@
+Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0 MiB
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:24397
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:33604
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:17264
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:730:5)
+Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0 MiB
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:24397
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:33604
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:17264
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:730:5)
+Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0 MiB
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:24397
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:33604
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:17264
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:730:5)
+Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0 MiB
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:24397
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:33604
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:17264
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:730:5)
+Downloading Chrome for Testing 145.0.7632.6 (playwright chromium v1208) from https://cdn.playwright.dev/builds/cft/145.0.7632.6/linux64/chrome-linux64.zip
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 0 MiB
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:24397
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:33604
+    at /tmp/atlas083-runner/node_modules/playwright-core/lib/zipBundleImpl.js:1:17264
+    at FSReqCallback.wrapper [as oncomplete] (node:fs:730:5)
+Failed to install browsers
+Error: Failed to download Chrome for Testing 145.0.7632.6 (playwright chromium v1208), caused by
+Error: Download failure, code=1
+    at ChildProcess.<anonymous> (/tmp/atlas083-runner/node_modules/playwright-core/lib/server/registry/browserFetcher.js:96:32)
+    at ChildProcess.emit (node:events:514:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:324:12)

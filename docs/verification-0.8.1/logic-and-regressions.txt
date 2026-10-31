@@ -1,0 +1,17 @@
+✔ UI queues selected test, shows immutable coverage and disables viewer writes (181.278599ms)
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (103.704501ms)
+✔ comparison separates regressions, recoveries, scope and changed tests (2.980681ms)
+✔ coverage is not compared across source changes/frameworks; metadata does not invalidate source (0.491413ms)
+✔ missing evidence, collection errors and skips never count as pass/fix (0.453273ms)
+✔ flaky candidates require repeat oscillation on identical snapshots (10.415985ms)
+✔ test edits, changing parameter sets and skipped execution are not flaky evidence (0.355054ms)
+✔ stale ignores source identifiers and ordering, detects changed executable code (0.557614ms)
+✔ Markdown export preserves snapshot identity and escapes table content (0.992281ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1238.984194

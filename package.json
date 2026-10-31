@@ -1,0 +1,40 @@
+{
+  "name": "qa-atlas-selfhost",
+  "version": "0.8.3",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit -p frontend/tsconfig.json",
+    "start": "node --env-file-if-exists=.env backend/src/index.mjs",
+    "dev:frontend": "vite --config frontend/vite.config.ts",
+    "user": "node --env-file-if-exists=.env backend/src/users.mjs",
+    "backup": "node --env-file-if-exists=.env backend/src/backup.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check:syntax": "node scripts/check-syntax.mjs"
+  },
+  "dependencies": {
+    "decimal.js": "10.6.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^1.31.0",
+    "nodemailer": "10.3.1",
+    "pg": "8.16.3",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "redis": "5.10.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "esbuild": "^0.28.0",
+    "jsdom": "^26.0.0",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  }
+}

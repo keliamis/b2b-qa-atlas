@@ -1,0 +1,17 @@
+✔ large document sends full selected requirement including REQ-051, not first 100 entries (5.661786ms)
+✔ unknown/ambiguous selection is rejected rather than silently truncated (0.592773ms)
+✔ UI creates recommendation draft, shows analysis and editable report, closes panels and recovers from errors (83.008444ms)
+✔ test data UI sends the selected requirement and clears prior results on selection change (67.396192ms)
+✔ advisor finds exactly 5000, ignores expected-only mentions and closes after input test (3.894115ms)
+✔ deduplicator detects same steps and near matches but preserves different boundaries (1.869425ms)
+✔ deterministic data, bounds, modes and safe CSV/JSON (5.664521ms)
+✔ secrets are removed before LLM submission (0.636529ms)
+✔ HTTP feature lifecycle: auth, failed analysis, missing traceback, provider failure, reports, data and decisions (439.329124ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 926.211467
